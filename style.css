@@ -1,0 +1,258 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#elso_szekcio {
+    position: static;
+    padding: 5%;
+    padding-top: 3%;
+    background-image: url(pictures/bg4.jpg);
+    background-size: 100%;
+}
+.container {
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+.aktualis a:link,.aktualis a:visited {
+    text-decoration: underline;
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 4px; 
+    opacity: 100%;
+}
+.kozos a {
+    position: absolute;
+    bottom: 5px;
+}
+.bold {
+    font-weight: bold;
+}
+.content {
+    color: white;
+    padding: 1%;
+}
+.columns {
+    display: flex;
+}
+.kozos {
+    flex: 1;
+    position: relative;
+}
+.content .columns .kozos h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 1%;
+}
+.content .columns .kozos hr {
+    margin-top: 0%;
+    border: 1px solid white;
+}
+.content .columns .kozos {
+    margin: 1%;
+    background-color: rgba(49, 46, 46, 0.6);
+    border-radius: 15px;
+    padding: 0.5%;
+    font-size: 20px;
+}
+.container .content h1 {
+    margin-top: 15%;
+}
+h1 {
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    font-size: 100px;
+}
+.kozos a:link, .kozos a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+.kozos a:hover,.kozos a:active {
+    background-color: rgb(76, 71, 71);
+    font-size: 18px;
+}
+.utolso {
+    padding-bottom: 40px;
+}
+.columns .kozos:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#masodik_szekcio, #harmadik_szekcio, #negyedik_szekcio {
+    padding: 5%;
+    padding-top: 0.5%;
+}
+.container_ketto , .container_harom, .container_negy {
+    padding: 2%;
+}
+.container_ketto hr, .container_harom hr, .container_negy hr{
+    margin-top: 0%;
+    border: 1px solid black;
+}
+.content_ketto, .content_harom, .content_negy {
+    display: flex;
+    font-size: 20px;
+}
+.bal {
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1%;
+}
+.jobb {
+    display: flex;
+    flex-direction: column;
+    flex: 3;         
+    padding: 1%;
+}
+.content_harom .jobb h2 {
+    text-align: center;
+}
+.content_harom .jobb .dobozok .kozosdoboz hr{
+    margin-top: 0%;
+    border: 1px solid white;
+}
+.content_negy .jobb ul li {
+    list-style-type: none;
+}
+.dobozok {
+    display: flex;
+}
+.kozosdoboz {
+    background-color: rgba(7, 113, 135, 0.7);
+    margin: 3px;
+    padding: 2px;
+    color: white;
+}
+.dobozok .kozosdoboz h4 {
+    text-align: center;
+    margin-bottom: 0%;
+}
+.dobozok .kozosdoboz ul li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+.also {
+    font-size: 20px;
+}
+.container_harom .also ul li {
+    list-style-type: none;
+}
+.kep2 {
+    margin-left: 30px;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+.ter {
+    margin-right: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    border-radius: 15px;
+}
+footer .ter a:link, footer .ter a:visited{
+    text-decoration: none;
+    color: white;
+}
+footer hr{
+    color: white;
+    margin-top: 0;
+}
+footer .name {
+    margin-bottom: 0;
+    text-align: center;
+}
+footer .name {
+    font-weight: bold;
+}
+footer .weblap_keszitok {
+    display: flex;
+    margin-top: 0;
+}
+footer h3 {
+    margin-bottom: 0;
+    text-align: center;
+}
+footer .nagy {
+    margin-right: 25px;
+}
+.margino {
+    margin-right: 20px;
+}
+/*-------------------NAVBAR CONFIG----------------------*/
+nav {
+    z-index: 100;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(79, 93, 117, 0.9);
+    margin: 0px;
+    padding: 1px;
+}
+nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover, nav ul li a:active {
+    color: aqua;
+}
+nav ul li {
+    list-style-type: none;
+    margin-right: 2px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 50px;
+    }
+    .columns {
+        flex-direction: column;
+    }
+    .kozos h2 {
+        font-size: 20px;
+    }
+    .kozos p, .kozos a {
+        font-size: 15px;
+    }
+    nav {
+        visibility: hidden;
+    }
+    .container_ketto h1, .container_harom h1, .container_negy h1 {
+        font-size: 35px;
+    }
+    .content_ketto , .content_harom , .content_negy{
+        font-size: 15px;
+        flex-direction: column;
+    }
+    .dobozok {
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .kicsi_kep {
+        height: 200px;
+    }
+    .container_harom .also ul {
+        font-size: 15px;
+    }
+    .container_harom .also h2 {
+        font-size: 20px;
+    }
+    .weblap_keszitok {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .weblap_keszitok .ter {
+        margin-bottom: 10px;
+    }
+}
